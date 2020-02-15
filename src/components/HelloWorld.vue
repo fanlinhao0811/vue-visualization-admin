@@ -3,6 +3,9 @@
     <h1>{{ msg }}</h1>
     <Rate allow-half
           v-model="valueHalf" />
+    <i-switch v-model="switch1"
+              @on-change="change"></i-switch>
+    <p>{{$t('message.hello')}}</p>
   </div>
 </template>
 
@@ -14,7 +17,17 @@ export default {
   },
   data () {
     return {
-      valueHalf: 2.5
+      valueHalf: 2.5,
+      switch1: false
+    }
+  },
+  methods: {
+    change (status) {
+      if (status) {
+        this.$i18n.locale = 'en'
+      } else {
+        this.$i18n.locale = 'zh'
+      }
     }
   }
 }
