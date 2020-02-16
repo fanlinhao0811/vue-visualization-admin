@@ -6,6 +6,12 @@
     <i-switch v-model="switch1"
               @on-change="change"></i-switch>
     <p>{{$t('message.hello')}}</p>
+    <Select v-model="model1"
+            style="width:200px">
+      <Option v-for="item in cityList"
+              :value="item.value"
+              :key="item.value">{{ item.label }}</Option>
+    </Select>
   </div>
 </template>
 
@@ -18,7 +24,34 @@ export default {
   data () {
     return {
       valueHalf: 2.5,
-      switch1: false
+      switch1: false,
+      cityList: [
+        {
+          value: 'New York',
+          label: 'New York'
+        },
+        {
+          value: 'London',
+          label: 'London'
+        },
+        {
+          value: 'Sydney',
+          label: 'Sydney'
+        },
+        {
+          value: 'Ottawa',
+          label: 'Ottawa'
+        },
+        {
+          value: 'Paris',
+          label: 'Paris'
+        },
+        {
+          value: 'Canberra',
+          label: 'Canberra'
+        }
+      ],
+      model1: ''
     }
   },
   methods: {
