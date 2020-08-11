@@ -1,5 +1,7 @@
+<style>
+</style>
 <template>
-  <div id="app">
+  <div>
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <!-- <Tree :data="tree"></Tree> -->
     <vueBigTree ref="bigTree"
@@ -72,21 +74,3 @@ export default {
   },
 }
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-#myholder {
-  width: 900px;
-  height: 700px;
-  margin: 0 auto;
-  margin-top: 25px;
-  border: 1px solid #d3d3d3;
-}
-</style>
