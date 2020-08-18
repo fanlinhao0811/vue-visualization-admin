@@ -6,7 +6,7 @@
 
 此文档针对 JointJS 的部分，如果你找的是 Rappid 的文档，请点击 [这里](http://www.jointjs.com/rappid/docs)，Rappid 是在 JointJS 基础上进行扩展功能更为丰富的组合套件。
 
-JointJS 向外暴露三个全局变量：**joint**、**V** 和 **g**。
+JointJS 向外暴露三个全局变量：**joint**、**v** 和 **g**。
 
 `joint` 下存放画示意图所需的全部对象，通过 `joint.version` 这个属性你可以知道当前使用的是哪一个版本 JointJS
 

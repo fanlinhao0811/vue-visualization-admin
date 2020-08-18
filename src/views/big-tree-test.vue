@@ -1,7 +1,34 @@
 <style>
+body {
+  padding: 0;
+  margin: 0;
+  background: #34495e;
+}
+
+.loader {
+  background: rgba(189, 195, 199, 1);
+  height: 3em;
+  width: 3em;
+  margin: 7em auto;
+  animation: loadit 4s linear infinite;
+}
+
+@keyframes loadit {
+  55% {
+    background: rgba(189, 195, 199, 0.4);
+    border-radius: 100%;
+    transform: rotate(360deg);
+    box-shadow: 7em 0 0 rgba(189, 195, 199, 0.3),
+      -7em 0 0 rgba(189, 195, 199, 0.3), 3em 0 0 rgba(189, 195, 199, 0.3),
+      -3em 0 0 rgba(189, 195, 199, 0.3), 0 7em 0 rgba(189, 195, 199, 0.3),
+      0 -7em 0 rgba(189, 195, 199, 0.3), 0 3em 0 rgba(189, 195, 199, 0.3),
+      0 -3em 0 rgba(189, 195, 199, 0.3);
+  }
+}
 </style>
 <template>
   <div>
+    <div class="loader"></div>
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <!-- <Tree :data="tree"></Tree> -->
     <vueBigTree ref="bigTree"
@@ -62,7 +89,9 @@ export default {
   },
   methods: {
     collapseAll () {
+      console.time('testForEach');
       this.$refs.bigTree.collapseAll();
+      console.timeEnd('testForEach');
     },
     expandAll () {
       this.$refs.bigTree.expandAll();

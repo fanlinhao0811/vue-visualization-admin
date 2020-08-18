@@ -180,8 +180,11 @@ export default {
       return Math.floor(this.option.height / this.option.itemHeight);
     }
   },
+  /* eslint-disable */
   mounted () {
+    console.time('testForEach');
     this.updateView();
+    console.timeEnd('testForEach');
   },
   methods: {
     updateView () {
