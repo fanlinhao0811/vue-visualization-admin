@@ -22,6 +22,11 @@ export const constantRouterMap = [
         path: '/rappid',
         name: 'rappid',
         component: () => import('@/views/rappid-demo.vue')
+      },
+      {
+        path: '/echarts-appendData',
+        name: 'echarts-appendData',
+        component: () => import('@/views/echarts-appendData.vue')
       }
     ]
   }

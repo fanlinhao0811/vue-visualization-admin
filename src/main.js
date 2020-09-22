@@ -2,7 +2,9 @@ import Vue from 'vue';
 import ViewUI from 'view-design';
 import App from './App.vue';
 import VueI18n from 'vue-i18n';
-import router from './router'
+import router from './router';
+import echarts from "echarts";
+Vue.prototype.$echarts = echarts;
 
 import 'view-design/dist/styles/iview.css';
 

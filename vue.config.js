@@ -7,18 +7,6 @@ const resolve = (dir) => {
 
 module.exports = {
   publicPath: './',
-  devServer: {
-    proxy: {
-      '/api': {
-        target: ''
-      }
-    }
-  },
-  configureWebpack: config => {
-    config.externals = {
-      'vue': 'Vue'
-    }
-  },
   // configureWebpack: {
   //   plugins: [
   //     new webpack.ProvidePlugin({

@@ -9,9 +9,13 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
+    "echarts": "^4.8.0",
     "jointjs": "^3.2.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.0",
     "view-design": "^4.1.2",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.4.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
