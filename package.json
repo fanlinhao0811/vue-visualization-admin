@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^3.4.4",
     "echarts": "^4.8.0",
-    "jointjs": "^3.2.0",
+    "jointjs": "^3.3.0",
     "less": "^3.12.2",
     "less-loader": "^7.0.0",
     "view-design": "^4.1.2",
